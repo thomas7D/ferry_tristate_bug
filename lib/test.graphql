@@ -1,0 +1,13 @@
+query Pokemons {
+    pokemons {
+        id
+        name
+    }
+}
+
+mutation UpdatePokemon($id: ID!, $name: String) {
+    updatePokemon(id: $id, name: $name) {
+        id
+        name
+    }
+}

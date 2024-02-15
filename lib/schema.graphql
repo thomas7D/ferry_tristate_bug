@@ -1,0 +1,12 @@
+type Pokemon {
+    id: ID!
+    name: String
+}
+
+type Mutation {
+    updatePokemon(id: ID!, name: String): Pokemon
+}
+
+type Query {
+    pokemons: [Pokemon!]!
+}
